@@ -1,0 +1,27 @@
+<form [formGroup]="inputForm" (ngSubmit)="respond()">
+	<h1 mat-dialog-title>
+		{{data.title}}
+	</h1>
+	<div mat-dialog-content>
+		<div formArrayName="values" class="prompt-fields">
+			<mat-form-field *ngFor="let input of data.inputs; let i = index" appearance="outline" color="accent">
+				<mat-label>{{input.label}}</mat-label>
+				<textarea *ngIf="input.multiline; else singleLineInput" matInput [formControlName]="i"
+					[placeholder]="input.placeholder"></textarea>
+				<ng-template #singleLineInput>
+					<input matInput [formControlName]="i" autocomplete="off" [type]="input.inputType"
+						[placeholder]="input.placeholder" />
+				</ng-template>
+				<mat-error *ngIf="inputForm.hasError('required', 'values.' + i)">Answer is required</mat-error>
+			</mat-form-field>
+		</div>
+	</div>
+	<div mat-dialog-actions align="end">
+		<button mat-button color="accent" type="button" mat-dialog-close cdkFocusInitial>
+			{{data.cancelButton}}
+		</button>
+		<button mat-button color="accent" type="submit" [disabled]="inputForm.invalid">
+			{{data.okButton}}
+		</button>
+	</div>
+</form>
