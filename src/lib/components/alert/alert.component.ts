@@ -3,7 +3,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { AlertPopupConfig } from '../../configs/alert-popup.config';
 
 @Component({
-  selector: 'popup-alert',
+  selector: 'mat-popup-alert',
   templateUrl: './alert.component.html',
   styleUrls: ['./alert.component.scss']
 })

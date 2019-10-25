@@ -1,23 +1,22 @@
 # Angular Material Popup
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.9.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.11.
 
 ## Code scaffolding
 
-Run `ng generate component component-name --project popup` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project popup`.
-> Note: Don't forget to add `--project popup` or else it will be added to the default project in your `angular.json` file. 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build popup` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Publishing
 
-After building your library with `ng build popup`, go to the dist folder `cd dist/popup` and run `npm publish`.
+After building your library with `ng build`, go to the dist folder `cd dist` and run `npm publish`.
 
 ## Running unit tests
 
-Run `ng test popup` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Further help
 

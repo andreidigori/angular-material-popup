@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { PromptPopupConfig } from '../../configs/prompt-popup.config';
 
 @Component({
-  selector: 'popup-prompt',
+  selector: 'mat-popup-prompt',
   templateUrl: './prompt.component.html',
   styleUrls: ['./prompt.component.scss']
 })

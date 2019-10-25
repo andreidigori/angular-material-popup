@@ -3,7 +3,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ConfirmPopupConfig } from '../../configs/confirm-popup.config';
 
 @Component({
-  selector: 'popup-confirm',
+  selector: 'mat-popup-confirm',
   templateUrl: './confirm.component.html',
   styleUrls: ['./confirm.component.scss']
 })
