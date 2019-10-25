@@ -4,17 +4,15 @@
     "codelyzer"
   ],
   "rules": {
-    "component-selector": [
-      true,
-      "element",
-      "mat-popup",
-      "kebab-case"
-    ],
     "array-type": false,
     "arrow-parens": false,
     "deprecation": {
       "severity": "warning"
     },
+    "import-blacklist": [
+      true,
+      "rxjs/Rx"
+    ],
     "interface-name": false,
     "max-classes-per-file": false,
     "max-line-length": [

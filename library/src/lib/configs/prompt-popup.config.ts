@@ -1,7 +1,7 @@
 import { ValidatorFn } from '@angular/forms';
 
 export interface PromptPopupInput {
-  initialValue?: string;
+  initialValue?: any;
   inputType?: string;
   label?: string;
   multiline?: boolean;
