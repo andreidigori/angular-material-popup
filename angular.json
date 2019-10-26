@@ -27,6 +27,7 @@
               "demo-app/src/favicon.ico"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "demo-app/src/styles.scss"
             ],
             "scripts": []
@@ -80,7 +81,7 @@
       "projectType": "library",
       "root": "library",
       "sourceRoot": "library/src",
-      "prefix": "mat-popup",
+      "prefix": "popup",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
