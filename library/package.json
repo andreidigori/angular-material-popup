@@ -1,6 +1,33 @@
 {
   "name": "angular-material-popup",
-  "version": "0.0.1",
+  "author": {
+    "name": "Andrei Digori",
+    "email": "andrei@digori.com"
+  },
+  "bugs": {
+    "email": "andrei@digori.com",
+    "url": "https://github.com/andreidigori/angular-material-popup/issues"
+  },
+  "description": "A collection of native popups built with Angular Material.",
+  "homepage": "https://github.com/andreidigori/angular-material-popup",
+  "keywords": [
+    "ng2",
+    "angular",
+    "mat",
+    "material",
+    "popup",
+    "dialog",
+    "alert",
+    "confirm",
+    "popup"
+  ],
+  "license": "MIT",
+  "readme": "https://github.com/andreidigori/angular-material-popup/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreidigori/angular-material-popup.git"
+  },
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^8.2.11",
     "@angular/core": "^8.2.11"
