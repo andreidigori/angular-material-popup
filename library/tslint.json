@@ -4,7 +4,7 @@
     "component-selector": [
       true,
       "element",
-      "mat-popup",
+      "popup",
       "kebab-case"
     ]
   }

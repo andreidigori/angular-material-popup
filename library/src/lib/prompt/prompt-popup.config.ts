@@ -1,3 +1,4 @@
+import { InjectionToken } from '@angular/core';
 import { ValidatorFn } from '@angular/forms';
 
 export interface PromptPopupInput {
@@ -15,3 +16,15 @@ export interface PromptPopupConfig {
   inputs?: PromptPopupInput | PromptPopupInput[];
   title?: string;
 }
+
+export const PROMPT_POPUP_CONFIG = new InjectionToken<PromptPopupConfig>('prompt-popup-config', {
+  factory: () => ({
+    cancelButton: 'CANCEL',
+    inputs: {
+      inputType: 'text',
+      label: 'Answer'
+    },
+    okButton: 'OK',
+    title: 'Prompt'
+  })
+});

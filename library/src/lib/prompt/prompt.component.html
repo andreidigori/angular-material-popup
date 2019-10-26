@@ -1,10 +1,10 @@
 <form [formGroup]="inputForm" (ngSubmit)="respond()">
 	<h1 mat-dialog-title>
-		{{data.title}}
+		{{config.title}}
 	</h1>
 	<div mat-dialog-content>
 		<div formArrayName="values" class="prompt-fields">
-			<mat-form-field *ngFor="let input of data.inputs; let i = index" appearance="outline" color="accent">
+			<mat-form-field *ngFor="let input of config.inputs; let i = index" appearance="outline" color="accent">
 				<mat-label>{{input.label}}</mat-label>
 				<textarea *ngIf="input.multiline; else singleLineInput" matInput [formControlName]="i"
 					[placeholder]="input.placeholder"></textarea>
@@ -18,10 +18,10 @@
 	</div>
 	<div mat-dialog-actions align="end">
 		<button mat-button color="accent" type="button" mat-dialog-close cdkFocusInitial>
-			{{data.cancelButton}}
+			{{config.cancelButton}}
 		</button>
 		<button mat-button color="accent" type="submit" [disabled]="inputForm.invalid">
-			{{data.okButton}}
+			{{config.okButton}}
 		</button>
 	</div>
 </form>
