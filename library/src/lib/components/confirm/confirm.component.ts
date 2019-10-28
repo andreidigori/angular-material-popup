@@ -18,7 +18,7 @@ export class ConfirmComponent {
   };
 
   constructor(
-    @Inject(CONFIRM_POPUP_CONFIG) defaults: ConfirmPopupConfig,
+    @Optional() @Inject(CONFIRM_POPUP_CONFIG) defaults: ConfirmPopupConfig,
     @Optional() @Inject(MAT_DIALOG_DATA) data: ConfirmPopupConfig
   ) {
     Object.assign(this.config, defaults, data);

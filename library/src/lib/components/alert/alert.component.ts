@@ -17,7 +17,7 @@ export class AlertComponent {
   };
 
   constructor(
-    @Inject(ALERT_POPUP_CONFIG) defaults: AlertPopupConfig,
+    @Optional() @Inject(ALERT_POPUP_CONFIG) defaults: AlertPopupConfig,
     @Optional() @Inject(MAT_DIALOG_DATA) data: AlertPopupConfig
   ) {
     Object.assign(this.config, defaults, data);

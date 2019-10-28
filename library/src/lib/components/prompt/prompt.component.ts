@@ -23,7 +23,7 @@ export class PromptComponent {
   inputForm: FormGroup;
 
   constructor(
-    @Inject(PROMPT_POPUP_CONFIG) defaults: PromptPopupConfig,
+    @Optional() @Inject(PROMPT_POPUP_CONFIG) defaults: PromptPopupConfig,
     @Optional() @Inject(MAT_DIALOG_DATA) data: PromptPopupConfig,
     private dialogRef: MatDialogRef<PromptComponent, string>,
     private fb: FormBuilder
