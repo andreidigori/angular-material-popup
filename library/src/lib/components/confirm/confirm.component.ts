@@ -11,7 +11,7 @@ import { CONFIRM_POPUP_CONFIG } from '../../tokens/confirm-popup.token';
 export class ConfirmComponent {
 
   config: ConfirmPopupConfig = {
-    cancelButton: 'Cancel',
+    cancelButton: 'CANCEL',
     color: 'primary',
     okButton: 'OK',
     title: `${location.host} says`

@@ -12,21 +12,19 @@ import { PROMPT_POPUP_CONFIG } from '../../tokens/prompt-popup.token';
 export class PromptComponent {
 
   config: PromptPopupConfig = {
-    cancelButton: 'Cancel',
+    cancelButton: 'CANCEL',
     color: 'primary',
-    inputs: {
-      label: 'Answer'
-    },
+    inputs: {},
     okButton: 'OK',
     title: `${location.host} says`
   };
   inputForm: FormGroup;
 
   constructor(
-    @Optional() @Inject(PROMPT_POPUP_CONFIG) defaults: PromptPopupConfig,
-    @Optional() @Inject(MAT_DIALOG_DATA) data: PromptPopupConfig,
     private dialogRef: MatDialogRef<PromptComponent, string>,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    @Optional() @Inject(PROMPT_POPUP_CONFIG) defaults: PromptPopupConfig,
+    @Optional() @Inject(MAT_DIALOG_DATA) data: PromptPopupConfig
   ) {
     Object.assign(this.config, defaults, data);
     if (!Array.isArray(this.config.inputs)) {
