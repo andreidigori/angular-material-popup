@@ -9,15 +9,17 @@ import { ConfirmPopupConfig, CONFIRM_POPUP_CONFIG } from '../../configs/confirm-
 })
 export class ConfirmComponent {
 
-  config: ConfirmPopupConfig;
+  config: ConfirmPopupConfig = {
+    cancelButton: 'Cancel',
+    color: 'primary',
+    okButton: 'OK',
+    title: `${location.host} says`
+  };
 
   constructor(
     @Inject(CONFIRM_POPUP_CONFIG) defaults: ConfirmPopupConfig,
     @Optional() @Inject(MAT_DIALOG_DATA) data: ConfirmPopupConfig
   ) {
-    this.config = {
-      ...defaults,
-      ...data
-    };
+    Object.assign(this.config, defaults, data);
   }
 }

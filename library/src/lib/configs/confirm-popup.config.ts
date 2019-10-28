@@ -6,11 +6,4 @@ export interface ConfirmPopupConfig extends PopupConfig {
   content?: string;
 }
 
-export const CONFIRM_POPUP_CONFIG = new InjectionToken<ConfirmPopupConfig>('confirm-popup-config', {
-  factory: () => ({
-    cancelButton: 'CANCEL',
-    color: 'primary',
-    okButton: 'OK',
-    title: 'Confirm?'
-  })
-});
+export const CONFIRM_POPUP_CONFIG = new InjectionToken<ConfirmPopupConfig>('confirm-popup-config');

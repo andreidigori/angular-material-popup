@@ -9,15 +9,16 @@ import { AlertPopupConfig, ALERT_POPUP_CONFIG } from '../../configs/alert-popup.
 })
 export class AlertComponent {
 
-  config: AlertPopupConfig;
+  config: AlertPopupConfig = {
+    color: 'primary',
+    okButton: 'OK',
+    title: `${location.host} says`
+  };
 
   constructor(
     @Inject(ALERT_POPUP_CONFIG) defaults: AlertPopupConfig,
     @Optional() @Inject(MAT_DIALOG_DATA) data: AlertPopupConfig
   ) {
-    this.config = {
-      ...defaults,
-      ...data
-    };
+    Object.assign(this.config, defaults, data);
   }
 }

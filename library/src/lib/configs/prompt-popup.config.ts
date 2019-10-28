@@ -16,14 +16,4 @@ export interface PromptPopupConfig extends PopupConfig {
   inputs?: PromptPopupInput | PromptPopupInput[];
 }
 
-export const PROMPT_POPUP_CONFIG = new InjectionToken<PromptPopupConfig>('prompt-popup-config', {
-  factory: () => ({
-    cancelButton: 'CANCEL',
-    color: 'primary',
-    inputs: {
-      label: 'Answer'
-    },
-    okButton: 'OK',
-    title: 'Prompt'
-  })
-});
+export const PROMPT_POPUP_CONFIG = new InjectionToken<PromptPopupConfig>('prompt-popup-config');

@@ -10,7 +10,15 @@ import { PromptPopupConfig, PROMPT_POPUP_CONFIG } from '../../configs/prompt-pop
 })
 export class PromptComponent {
 
-  config: PromptPopupConfig;
+  config: PromptPopupConfig = {
+    cancelButton: 'Cancel',
+    color: 'primary',
+    inputs: {
+      label: 'Answer'
+    },
+    okButton: 'OK',
+    title: `${location.host} says`
+  };
   inputForm: FormGroup;
 
   constructor(
@@ -19,10 +27,7 @@ export class PromptComponent {
     private dialogRef: MatDialogRef<PromptComponent, string>,
     private fb: FormBuilder
   ) {
-    this.config = {
-      ...defaults,
-      ...data
-    };
+    Object.assign(this.config, defaults, data);
     if (!Array.isArray(this.config.inputs)) {
       this.config.inputs = [this.config.inputs];
     }
