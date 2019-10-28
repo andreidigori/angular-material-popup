@@ -1,6 +1,7 @@
 import { Component, Inject, Optional } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { AlertPopupConfig, ALERT_POPUP_CONFIG } from '../../configs/alert-popup.config';
+import { AlertPopupConfig } from '../../configs/alert-popup.config';
+import { ALERT_POPUP_CONFIG } from '../../tokens/alert-popup.token';
 
 @Component({
   selector: 'popup-alert',

@@ -1,4 +1,3 @@
-import { InjectionToken } from '@angular/core';
 import { ValidatorFn } from '@angular/forms';
 import { PopupConfig } from './popup.config';
 
@@ -15,5 +14,3 @@ export interface PromptPopupConfig extends PopupConfig {
   cancelButton?: string;
   inputs?: PromptPopupInput | PromptPopupInput[];
 }
-
-export const PROMPT_POPUP_CONFIG = new InjectionToken<PromptPopupConfig>('prompt-popup-config');

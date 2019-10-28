@@ -1,7 +1,8 @@
 import { Component, Inject, Optional } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { PromptPopupConfig, PROMPT_POPUP_CONFIG } from '../../configs/prompt-popup.config';
+import { PromptPopupConfig } from '../../configs/prompt-popup.config';
+import { PROMPT_POPUP_CONFIG } from '../../tokens/prompt-popup.token';
 
 @Component({
   selector: 'popup-prompt',

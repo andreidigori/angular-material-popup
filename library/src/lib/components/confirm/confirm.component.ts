@@ -1,6 +1,7 @@
 import { Component, Inject, Optional } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { ConfirmPopupConfig, CONFIRM_POPUP_CONFIG } from '../../configs/confirm-popup.config';
+import { ConfirmPopupConfig } from '../../configs/confirm-popup.config';
+import { CONFIRM_POPUP_CONFIG } from '../../tokens/confirm-popup.token';
 
 @Component({
   selector: 'popup-confirm',
