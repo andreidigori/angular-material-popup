@@ -1,6 +1,14 @@
 import { Component } from '@angular/core';
 import { Validators } from '@angular/forms';
-import { AlertPopup, ConfirmPopup, PromptPopup, AlertPopupConfig, ConfirmPopupConfig, PromptPopupConfig } from 'ngx-material-popup';
+import {
+  AlertPopup,
+  ConfirmPopup,
+  PromptPopup,
+  AlertPopupConfig,
+  ConfirmPopupConfig,
+  PromptPopupConfig,
+  PromptPopupInput
+} from 'ngx-material-popup';
 
 @Component({
   selector: 'app-root',
@@ -53,6 +61,19 @@ export class AppComponent {
     private confirmPopup: ConfirmPopup,
     private promptPopup: PromptPopup
   ) { }
+
+  showNativeAlert() {
+    this.result = window.alert(this.alertConfig.content);
+  }
+
+  showNativeConfirm() {
+    this.result = window.confirm(this.confirmConfig.content);
+  }
+
+  showNativePrompt() {
+    const input: PromptPopupInput = this.promptConfig.inputs[0];
+    this.result = window.prompt(input.label, input.initialValue);
+  }
 
   showAlert(config?: AlertPopupConfig) {
     const popup$ = this.alertPopup.show(config);
