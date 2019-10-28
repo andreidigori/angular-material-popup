@@ -3,10 +3,12 @@
   "version": "0.0.2",
   "scripts": {
     "start": "ng serve demo-app",
+    "build:docs": "ng build demo-app",
+    "build:docs:prod": "ng build demo-app --prod",
     "build": "ng build library",
     "test": "ng test library",
     "lint": "ng lint library",
-    "publish:library": "cd dist/library && npm publish"
+    "publish:lib": "cd dist && npm publish"
   },
   "private": true,
   "dependencies": {

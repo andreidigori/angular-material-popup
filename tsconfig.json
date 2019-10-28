@@ -20,10 +20,10 @@
     ],
     "paths": {
       "ngx-material-popup": [
-        "dist/library"
+        "dist"
       ],
       "ngx-material-popup/*": [
-        "dist/library/*"
+        "dist/*"
       ]
     }
   },
