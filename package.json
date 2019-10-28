@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "ng serve demo-app",
-    "build:docs": "ng build demo-app",
-    "build:docs:prod": "ng build demo-app --prod",
+    "build:docs": "ng build demo-app --baseHref=/ngx-material-popup/ --prod",
     "build": "ng build library",
     "test": "ng test library",
     "lint": "ng lint library",
