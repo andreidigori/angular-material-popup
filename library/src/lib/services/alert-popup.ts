@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { AlertComponent } from './alert.component';
-import { AlertPopupConfig } from './alert-popup.config';
+import { AlertComponent } from '../components/alert/alert.component';
+import { AlertPopupConfig } from '../configs/alert-popup.config';
 
 @Injectable()
-export class AlertPopupService {
+export class AlertPopup {
 
   constructor(
     private dialog: MatDialog

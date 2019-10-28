@@ -19,10 +19,10 @@
       "dom"
     ],
     "paths": {
-      "angular-material-popup": [
+      "ngx-material-popup": [
         "dist/library"
       ],
-      "angular-material-popup/*": [
+      "ngx-material-popup/*": [
         "dist/library/*"
       ]
     }

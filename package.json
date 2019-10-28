@@ -1,5 +1,5 @@
 {
-  "name": "angular-material-popup",
+  "name": "ngx-material-popup",
   "version": "0.0.2",
   "scripts": {
     "start": "ng serve demo-app",

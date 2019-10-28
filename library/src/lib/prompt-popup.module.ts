@@ -5,8 +5,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { PromptComponent } from './prompt.component';
-import { PromptPopupService } from './prompt-popup.service';
+import { PromptComponent } from './components/prompt/prompt.component';
+import { PromptPopup } from './services/prompt-popup';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { PromptPopupService } from './prompt-popup.service';
     MatInputModule
   ],
   providers: [
-    PromptPopupService
+    PromptPopup
   ],
   entryComponents: [
     PromptComponent

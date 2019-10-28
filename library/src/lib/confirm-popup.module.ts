@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
-import { ConfirmComponent } from './confirm.component';
-import { ConfirmPopupService } from './confirm-popup.service';
+import { ConfirmComponent } from './components/confirm/confirm.component';
+import { ConfirmPopup } from './services/confirm-popup';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { ConfirmPopupService } from './confirm-popup.service';
     MatDialogModule
   ],
   providers: [
-    ConfirmPopupService
+    ConfirmPopup
   ],
   entryComponents: [
     ConfirmComponent

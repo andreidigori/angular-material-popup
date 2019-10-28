@@ -1,15 +1,15 @@
 {
-  "name": "angular-material-popup",
+  "name": "ngx-material-popup",
   "author": {
     "name": "Andrei Digori",
     "email": "andrei@digori.com"
   },
   "bugs": {
     "email": "andrei@digori.com",
-    "url": "https://github.com/andreidigori/angular-material-popup/issues"
+    "url": "https://github.com/andreidigori/ngx-material-popup/issues"
   },
   "description": "A collection of native popups built with Angular Material.",
-  "homepage": "https://github.com/andreidigori/angular-material-popup",
+  "homepage": "https://github.com/andreidigori/ngx-material-popup",
   "keywords": [
     "ng2",
     "angular",
@@ -22,10 +22,10 @@
     "popup"
   ],
   "license": "MIT",
-  "readme": "https://github.com/andreidigori/angular-material-popup/blob/master/README.md",
+  "readme": "https://github.com/andreidigori/ngx-material-popup/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andreidigori/angular-material-popup.git"
+    "url": "https://github.com/andreidigori/ngx-material-popup.git"
   },
   "version": "0.0.2",
   "peerDependencies": {

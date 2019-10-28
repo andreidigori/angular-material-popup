@@ -1,7 +1,7 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, Optional } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { PromptPopupConfig, PROMPT_POPUP_CONFIG } from './prompt-popup.config';
+import { PromptPopupConfig, PROMPT_POPUP_CONFIG } from '../../configs/prompt-popup.config';
 
 @Component({
   selector: 'popup-prompt',
@@ -10,15 +10,19 @@ import { PromptPopupConfig, PROMPT_POPUP_CONFIG } from './prompt-popup.config';
 })
 export class PromptComponent {
 
+  config: PromptPopupConfig;
   inputForm: FormGroup;
 
   constructor(
-    @Inject(PROMPT_POPUP_CONFIG) public config: PromptPopupConfig,
-    @Inject(MAT_DIALOG_DATA) data: PromptPopupConfig,
+    @Inject(PROMPT_POPUP_CONFIG) defaults: PromptPopupConfig,
+    @Optional() @Inject(MAT_DIALOG_DATA) data: PromptPopupConfig,
     private dialogRef: MatDialogRef<PromptComponent, string>,
     private fb: FormBuilder
   ) {
-    Object.assign(this.config, data);
+    this.config = {
+      ...defaults,
+      ...data
+    };
     if (!Array.isArray(this.config.inputs)) {
       this.config.inputs = [this.config.inputs];
     }

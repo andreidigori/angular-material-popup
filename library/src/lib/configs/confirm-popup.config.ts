@@ -1,15 +1,15 @@
 import { InjectionToken } from '@angular/core';
+import { PopupConfig } from './popup.config';
 
-export interface ConfirmPopupConfig {
+export interface ConfirmPopupConfig extends PopupConfig {
   cancelButton?: string;
   content?: string;
-  okButton?: string;
-  title?: string;
 }
 
 export const CONFIRM_POPUP_CONFIG = new InjectionToken<ConfirmPopupConfig>('confirm-popup-config', {
   factory: () => ({
     cancelButton: 'CANCEL',
+    color: 'primary',
     okButton: 'OK',
     title: 'Confirm?'
   })

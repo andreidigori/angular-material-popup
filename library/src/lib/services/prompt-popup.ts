@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { PromptComponent } from './prompt.component';
-import { PromptPopupConfig } from './prompt-popup.config';
+import { PromptComponent } from '../components/prompt/prompt.component';
+import { PromptPopupConfig } from '../configs/prompt-popup.config';
 
 @Injectable()
-export class PromptPopupService {
+export class PromptPopup {
 
   constructor(
     private dialog: MatDialog

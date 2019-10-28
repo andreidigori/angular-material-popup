@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ConfirmComponent } from './confirm.component';
-import { ConfirmPopupConfig } from './confirm-popup.config';
+import { ConfirmComponent } from '../components/confirm/confirm.component';
+import { ConfirmPopupConfig } from '../configs/confirm-popup.config';
 
 @Injectable()
-export class ConfirmPopupService {
+export class ConfirmPopup {
 
   constructor(
     private dialog: MatDialog

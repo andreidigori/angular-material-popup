@@ -5,10 +5,10 @@
 	{{config.content}}
 </div>
 <div mat-dialog-actions align="end">
-	<button mat-button color="accent" [mat-dialog-close]="false" cdkFocusInitial>
+	<button mat-button [color]="config.color" [mat-dialog-close]="false" cdkFocusInitial>
 		{{config.cancelButton}}
 	</button>
-	<button mat-button color="accent" [mat-dialog-close]="true">
+	<button mat-button [color]="config.color" [mat-dialog-close]="true">
 		{{config.okButton}}
 	</button>
 </div>
