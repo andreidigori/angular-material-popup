@@ -89,8 +89,6 @@ THE SOFTWARE.
 
 @angular/material/dialog
 
-@angular/material/divider
-
 @angular/material/form-field
 
 @angular/platform-browser
