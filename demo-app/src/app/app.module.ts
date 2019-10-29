@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
-import { MatDividerModule } from '@angular/material/divider';
 import { AlertPopupModule, ConfirmPopupModule, PromptPopupModule } from 'ngx-material-popup';
 import { AppComponent } from './app.component';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
@@ -15,7 +14,6 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatDividerModule,
     AlertPopupModule,
     ConfirmPopupModule,
     PromptPopupModule

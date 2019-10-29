@@ -5,59 +5,55 @@
   <h2 class="mat-h2 header">
     Angular material popups boxes (alert, confirm, popup)
   </h2>
-  <h2 class="mat-h2">
-    Native popups:
-  </h2>
-  <div>
-    <button mat-raised-button color="accent" (click)="showNativeAlert()">
-      SHOW ALERT
-    </button>
-    <button mat-raised-button color="accent" (click)="showNativeConfirm()">
-      SHOW CONFIRM
-    </button>
-    <button mat-raised-button color="accent" (click)="showNativePrompt()">
-      SHOW PROMPT
-    </button>
-  </div>
-  <h2 class="mat-h2">
-    Default popups:
-  </h2>
-  <div>
-    <button mat-raised-button color="primary" (click)="showAlert('Default alert')">
-      SHOW ALERT
-    </button>
-    <button mat-raised-button color="primary" (click)="showConfirm('Default confirm')">
-      SHOW CONFIRM
-    </button>
-    <button mat-raised-button color="primary" (click)="showPrompt('Default prompt', 'Some value')">
-      SHOW PROMPT
-    </button>
-  </div>
-  <h2 class="mat-h2">
-    Popups with config:
-  </h2>
-  <div>
-    <button mat-raised-button color="warn" (click)="showAlert(alertConfig)">
-      SHOW ALERT
-    </button>
-    <button mat-raised-button color="warn" (click)="showConfirm(confirmConfig)">
-      SHOW CONFIRM
-    </button>
-    <button mat-raised-button color="warn" (click)="showPrompt(promptConfig)">
-      SHOW PROMPT
-    </button>
-  </div>
   <h4 class="mat-h4">
     Result after last popup close: <code>{{result | json}}</code>
   </h4>
-  <mat-divider></mat-divider>
-  <h3 class="mat-h3">
-    Configs:
-  </h3>
+  <h2 class="mat-h2">
+    Alert popup:
+  </h2>
+  <div>
+    <button mat-raised-button color="warn" (click)="showNativeAlert()">
+      NATIVE ALERT
+    </button>
+    <button mat-raised-button color="warn" (click)="showDefaultAlert()">
+      DEFAULT ALERT
+    </button>
+    <button mat-raised-button color="warn" (click)="showAlert(alertConfig)">
+      ALERT WITH CONFIG
+    </button>
+  </div>
   <em>alertConfig: AlertPopupConfig</em>
   <pre>{{alertConfig | json}}</pre>
+  <h2 class="mat-h2">
+    Confirm popup:
+  </h2>
+  <div>
+    <button mat-raised-button color="accent" (click)="showNativeConfirm()">
+      NATIVE CONFIRM
+    </button>
+    <button mat-raised-button color="accent" (click)="showDefaultConfirm()">
+      DEFAULT CONFIRM
+    </button>
+    <button mat-raised-button color="accent" (click)="showConfirm(confirmConfig)">
+      CONFIRM WITH CONFIG
+    </button>
+  </div>
   <em>confirmConfig: ConfirmPopupConfig</em>
   <pre>{{confirmConfig | json}}</pre>
+  <h2 class="mat-h2">
+    Prompt popup:
+  </h2>
+  <div>
+    <button mat-raised-button color="primary" (click)="showNativePrompt()">
+      NATIVE PROMPT
+    </button>
+    <button mat-raised-button color="primary" (click)="showDefaultPrompt()">
+      DEFAULT PROMPT
+    </button>
+    <button mat-raised-button color="primary" (click)="showPrompt(promptConfig)">
+      PROMPT WITH CONFIG
+    </button>
+  </div>
   <em>promptConfig: PromptPopupConfig</em>
   <pre>{{promptConfig | json}}</pre>
 </div>

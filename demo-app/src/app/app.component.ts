@@ -63,30 +63,44 @@ export class AppComponent {
   ) { }
 
   showNativeAlert() {
-    this.result = window.alert(this.alertConfig.content);
+    this.result = window.alert('Default alert');
   }
 
-  showNativeConfirm() {
-    this.result = window.confirm(this.confirmConfig.content);
+  showDefaultAlert() {
+    const popup$ = this.alertPopup.show('Default alert');
+    popup$.subscribe(result => this.result = result);
   }
 
-  showNativePrompt() {
-    const input: PromptPopupInput = this.promptConfig.inputs[0];
-    this.result = window.prompt(input.label, input.initialValue);
-  }
-
-  showAlert(config?: string | AlertPopupConfig) {
+  showAlert(config: AlertPopupConfig) {
     const popup$ = this.alertPopup.show(config);
     popup$.subscribe(result => this.result = result);
   }
 
-  showConfirm(config?: string | ConfirmPopupConfig) {
+  showNativeConfirm() {
+    this.result = window.confirm('Default confirm');
+  }
+
+  showDefaultConfirm() {
+    const popup$ = this.confirmPopup.show('Default confirm');
+    popup$.subscribe(result => this.result = result);
+  }
+
+  showConfirm(config: ConfirmPopupConfig) {
     const popup$ = this.confirmPopup.show(config);
     popup$.subscribe(result => this.result = result);
   }
 
-  showPrompt(config?: string | PromptPopupConfig, init?: string) {
-    const popup$ = this.promptPopup.show(config, init);
+  showNativePrompt() {
+    this.result = window.prompt('Default prompt', 'Some value');
+  }
+
+  showDefaultPrompt() {
+    const popup$ = this.promptPopup.show('Default prompt', 'Some value');
+    popup$.subscribe(result => this.result = result);
+  }
+
+  showPrompt(config: PromptPopupConfig) {
+    const popup$ = this.promptPopup.show(config);
     popup$.subscribe(result => this.result = result);
   }
 }
