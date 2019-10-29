@@ -10,9 +10,14 @@ export class AlertPopup {
     private dialog: MatDialog
   ) { }
 
-  show(config?: AlertPopupConfig) {
+  show(message?: string | AlertPopupConfig) {
+    if (typeof message === 'string') {
+      message = {
+        content: message
+      };
+    }
     const dialogRef = this.dialog.open<AlertComponent, AlertPopupConfig>(AlertComponent, {
-      data: config,
+      data: message,
       minWidth: '256px',
       restoreFocus: true
     });

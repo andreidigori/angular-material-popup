@@ -10,9 +10,14 @@ export class ConfirmPopup {
     private dialog: MatDialog
   ) { }
 
-  show(config?: ConfirmPopupConfig) {
+  show(message?: string | ConfirmPopupConfig) {
+    if (typeof message === 'string') {
+      message = {
+        content: message
+      };
+    }
     const dialogRef = this.dialog.open<ConfirmComponent, ConfirmPopupConfig, boolean>(ConfirmComponent, {
-      data: config,
+      data: message,
       minWidth: '256px',
       restoreFocus: true
     });

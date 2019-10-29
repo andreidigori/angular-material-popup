@@ -23,13 +23,13 @@
     Default popups:
   </h2>
   <div>
-    <button mat-raised-button color="primary" (click)="showAlert()">
+    <button mat-raised-button color="primary" (click)="showAlert('Default alert')">
       SHOW ALERT
     </button>
-    <button mat-raised-button color="primary" (click)="showConfirm()">
+    <button mat-raised-button color="primary" (click)="showConfirm('Default confirm')">
       SHOW CONFIRM
     </button>
-    <button mat-raised-button color="primary" (click)="showPrompt()">
+    <button mat-raised-button color="primary" (click)="showPrompt('Default prompt', 'Some value')">
       SHOW PROMPT
     </button>
   </div>

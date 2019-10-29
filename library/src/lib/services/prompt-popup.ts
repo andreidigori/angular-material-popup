@@ -10,9 +10,17 @@ export class PromptPopup {
     private dialog: MatDialog
   ) { }
 
-  show(config?: PromptPopupConfig) {
+  show(message?: string | PromptPopupConfig, initial?: string) {
+    if (typeof message === 'string') {
+      message = {
+        inputs: {
+          initialValue: initial,
+          label: message
+        }
+      };
+    }
     const dialogRef = this.dialog.open<PromptComponent, PromptPopupConfig, string | string[]>(PromptComponent, {
-      data: config,
+      data: message,
       minWidth: '256px',
       restoreFocus: true
     });

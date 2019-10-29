@@ -75,18 +75,18 @@ export class AppComponent {
     this.result = window.prompt(input.label, input.initialValue);
   }
 
-  showAlert(config?: AlertPopupConfig) {
+  showAlert(config?: string | AlertPopupConfig) {
     const popup$ = this.alertPopup.show(config);
     popup$.subscribe(result => this.result = result);
   }
 
-  showConfirm(config?: ConfirmPopupConfig) {
+  showConfirm(config?: string | ConfirmPopupConfig) {
     const popup$ = this.confirmPopup.show(config);
     popup$.subscribe(result => this.result = result);
   }
 
-  showPrompt(config?: PromptPopupConfig) {
-    const popup$ = this.promptPopup.show(config);
+  showPrompt(config?: string | PromptPopupConfig, init?: string) {
+    const popup$ = this.promptPopup.show(config, init);
     popup$.subscribe(result => this.result = result);
   }
 }
