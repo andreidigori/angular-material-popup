@@ -1,3 +1,6 @@
+[![npm version](https://badge.fury.io/js/ngx-material-popup.svg)](https://badge.fury.io/js/ngx-material-popup)
+[![Build Status](https://travis-ci.org/andreidigori/ngx-material-popup.svg?branch=master)](https://travis-ci.org/andreidigori/ngx-material-popup)
+
 # AngularMaterialPopup
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
