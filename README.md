@@ -1,5 +1,6 @@
 [![npm version](https://badge.fury.io/js/ngx-material-popup.svg)](https://badge.fury.io/js/ngx-material-popup)
 [![Build Status](https://travis-ci.org/andreidigori/ngx-material-popup.svg?branch=master)](https://travis-ci.org/andreidigori/ngx-material-popup)
+[![Coverage Status](https://coveralls.io/repos/github/andreidigori/ngx-material-popup/badge.svg?branch=master)](https://coveralls.io/github/andreidigori/ngx-material-popup?branch=master)
 
 # AngularMaterialPopup
 
