@@ -19,7 +19,7 @@
     "dialog",
     "alert",
     "confirm",
-    "popup"
+    "prompt"
   ],
   "license": "MIT",
   "readme": "https://github.com/andreidigori/ngx-material-popup/blob/master/README.md",
@@ -34,6 +34,8 @@
     "@angular/common": "^8.2.11",
     "@angular/core": "^8.2.11",
     "@angular/forms": "^8.2.11",
-    "@angular/material": "^8.2.3"
+    "@angular/material": "^8.2.3",
+    "@angular/platform-browser": "^8.2.11",
+    "rxjs": "^6.4.0"
   }
 }

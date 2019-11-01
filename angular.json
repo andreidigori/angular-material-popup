@@ -95,7 +95,8 @@
           "options": {
             "main": "library/src/test.ts",
             "tsConfig": "library/tsconfig.spec.json",
-            "karmaConfig": "library/karma.conf.js"
+            "karmaConfig": "library/karma.conf.js",
+            "codeCoverage": true
           }
         },
         "lint": {

@@ -63,7 +63,8 @@ export class AppComponent {
   ) { }
 
   showNativeAlert() {
-    this.result = window.alert('Default alert');
+    window.alert('Default alert');
+    this.result = undefined;
   }
 
   showDefaultAlert() {
