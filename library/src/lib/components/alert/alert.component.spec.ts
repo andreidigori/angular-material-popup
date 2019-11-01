@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 import { AlertComponent } from './alert.component';
 
 describe('AlertComponent', () => {
@@ -8,7 +9,13 @@ describe('AlertComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AlertComponent ]
+      declarations: [
+        AlertComponent
+      ],
+      imports: [
+        MatButtonModule,
+        MatDialogModule
+      ]
     })
     .compileComponents();
   }));
