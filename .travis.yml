@@ -1,11 +1,18 @@
 language: node_js
 
 node_js:
- - 8
- - 9
- - 10
- - 11
- - 12
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
 
 script:
   - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
