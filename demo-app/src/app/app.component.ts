@@ -6,8 +6,7 @@ import {
   PromptPopup,
   AlertPopupConfig,
   ConfirmPopupConfig,
-  PromptPopupConfig,
-  PromptPopupInput
+  PromptPopupConfig
 } from 'ngx-material-popup';
 
 @Component({
