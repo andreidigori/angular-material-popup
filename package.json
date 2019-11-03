@@ -1,6 +1,6 @@
 {
   "name": "ngx-material-popup",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "start": "ng serve demo-app",
     "build:docs": "ng build demo-app --baseHref=/ngx-material-popup/ --prod",
